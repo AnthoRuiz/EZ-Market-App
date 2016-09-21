@@ -15,6 +15,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import com.anthoruiz.jaka.jarvis.ez_market.adapters.ProductAdapter;
 import com.anthoruiz.jaka.jarvis.ez_market.loader.ProductWrapperLoader;
@@ -106,6 +107,10 @@ public class MainActivity extends AppCompatActivity implements
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }else if(id == R.id.icon_search){
+            Toast toast = Toast.makeText(getApplicationContext(), "alo", Toast.LENGTH_SHORT);
+            toast.show();
+
         }
 
         return super.onOptionsItemSelected(item);
